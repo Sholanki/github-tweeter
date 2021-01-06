@@ -14,15 +14,15 @@ import (
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
 	"github.com/google/go-github/github"
-	"github.com/xh3b4sd/budget"
-	"github.com/xh3b4sd/logger"
-	"github.com/xh3b4sd/random"
-	"github.com/xh3b4sd/tracer"
+	"github.com/Sholanki/budget"
+	"github.com/Sholanki/logger"
+	"github.com/Sholanki/random"
+	"github.com/Sholanki/tracer"
 	"golang.org/x/oauth2"
 )
 
 const (
-	org  = "xh3b4sd"
+	org  = "Sholanki"
 	repo = "content"
 	dir  = "philosophy"
 )

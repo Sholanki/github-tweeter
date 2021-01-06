@@ -39,7 +39,7 @@ $ go run main.go
 {"caller":"github-tweeter/main.go:260","level":"debug","message":"finding content","time":"2020-08-15T12:12:47.038595+00:00"}
 {"caller":"github-tweeter/main.go:280","level":"debug","message":"found content `#sky is the #limit. What you can do and what not is only a #matter of #imagination. You can #explore the unexplored #territory. You can #go #big.`","time":"2020-08-15T12:12:47.809698+00:00"}
 {"caller":"github-tweeter/main.go:290","level":"debug","message":"verifying twitter credentials for user","time":"2020-08-15T12:12:47.809785+00:00"}
-{"caller":"github-tweeter/main.go:302","level":"debug","message":"verified twitter credentials for user `xh3b4sd`","time":"2020-08-15T12:12:48.061411+00:00"}
+{"caller":"github-tweeter/main.go:302","level":"debug","message":"verified twitter credentials for user `Sholanki`","time":"2020-08-15T12:12:48.061411+00:00"}
 {"caller":"github-tweeter/main.go:313","level":"debug","message":"tweeting content","time":"2020-08-15T12:12:48.061456+00:00"}
 {"caller":"github-tweeter/main.go:320","level":"debug","message":"tweeted content","time":"2020-08-15T12:12:48.269885+00:00"}
 ```
@@ -54,7 +54,7 @@ $ cat ~/scripts/tweet.sh
 # This script is executed by a crontab every 4 hours in order to automatically
 # tweet philosophical lines from my content repository.
 #
-#     https://github.com/xh3b4sd/content
+#     https://github.com/Sholanki/content
 #
 
 export GITHUB_TWEETER_GITHUB_TOKEN=$(cat ~/.credential/github-tweeter-github-token)
@@ -63,10 +63,10 @@ export TWITTER_CONSUMER_SECRET=$(cat ~/.credential/twitter-consumer-secret)
 export TWITTER_ACCESS_TOKEN=$(cat ~/.credential/twitter-access-token)
 export TWITTER_ACCESS_SECRET=$(cat ~/.credential/twitter-access-secret)
 
-/Users/xh3b4sd/go/src/github.com/xh3b4sd/github-tweeter/github-tweeter
+/Users/Sholanki/go/src/github.com/Sholanki/github-tweeter/github-tweeter
 ```
 
 ```
 $ crontab -l
-0 */4 * * * /Users/xh3b4sd/scripts/tweet.sh
+0 */4 * * * /Users/Sholanki/scripts/tweet.sh
 ```
